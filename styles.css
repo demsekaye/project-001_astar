@@ -1,0 +1,141 @@
+/* Reset spacing for consistency */
+html, body {
+  height: 100%; margin: 0;
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+ul { list-style: none; }
+
+button {
+  border: none;
+  box-shadow: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  font-weight: 800;
+}
+/* ----- NAV ----- */
+.site-header {
+  position: fixed;  /* sits on top of hero */
+  top: 0; left: 0; right: 0;
+  z-index: 10;    
+  background-color: rgba(89, 89, 89, 0.69);
+  height: 51px;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#logo img {
+  transform: translate(-10px, 3px);
+  height: 43.35px;
+  width: auto;
+}
+
+#main-nav {
+  position: absolute;
+  left: 50%;
+  top: 50%;                          /* vertical centering inside the bar */
+  transform: translate(-50%, -50%);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Right Nav*/
+
+#right-nav {
+  margin-left: auto;                 /* takes remaining space, sticks right */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-icons-container {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+}
+
+.nav-icons-container a {
+  text-decoration: none;  /* remove underline */
+  color: inherit;         /* keep current color */
+  display: inline-flex;   /* shrink-wrap to icon */
+  line-height: 0;         /* remove baseline space under img */
+}
+
+.nav-icons-container img {
+  display: block;         /* no extra descender gap */
+}
+
+
+.nav-icon {
+  height: 15px;
+  width: 15px;
+}
+
+
+.red-button {
+  background-color: #AC0000;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 81px;
+  height: 35px;
+  padding: 5px 10px;
+}
+
+.hamburger {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 19px;
+  height: 2px;
+  background: white;
+  display: block;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* ----- HERO ----- */
+.hero {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-top: 51px;
+  background: url('assets/hero-bg.png') center/cover no-repeat;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
+}
+
+.hero-content {
+  
+}
