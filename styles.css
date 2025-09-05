@@ -60,12 +60,26 @@ button {
   gap: 1.5rem;
 }
 
+/* inactive */
 .nav-links a {
-  color: white;
-  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  position: relative;
   font-weight: 600;
   font-size: 16px;
 }
+
+.nav-links a[aria-current="true"], 
+.nav-links a[aria-current="page"] { 
+  color: #fff;
+  font-weight: 600; /* bold */ 
+  text-shadow: 0 0 1px #ffffff; 
+  text-decoration: underline; 
+  text-underline-offset: 4px; 
+  text-decoration-thickness: 1px; 
+  text-decoration-color: rgba(255, 255, 255, 0.9); 
+}
+
 
 /* Right Nav*/
 
@@ -83,14 +97,14 @@ button {
 }
 
 .nav-icons-container a {
-  text-decoration: none;  /* remove underline */
-  color: inherit;         /* keep current color */
-  display: inline-flex;   /* shrink-wrap to icon */
-  line-height: 0;         /* remove baseline space under img */
+  text-decoration: none;  
+  color: inherit;        
+  display: inline-flex;   
+  line-height: 0;   
 }
 
 .nav-icons-container img {
-  display: block;         /* no extra descender gap */
+  display: block;    
 }
 
 
@@ -131,7 +145,7 @@ button {
   min-height: 100vh;
   min-height: 100dvh;
   padding-top: 51px;
-  background: url('assets/hero-bg.png') center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('assets/hero-bg.png') center/cover no-repeat;
   box-sizing: border-box;
   display: flex;
   align-items: center;
