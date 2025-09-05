@@ -3,6 +3,11 @@ html, body {
   height: 100%; margin: 0;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 body, ul {
   margin: 0;
   padding: 0;
@@ -19,6 +24,7 @@ button {
   font: inherit;
   cursor: pointer;
   font-weight: 800;
+  text-decoration: none;
 }
 /* ----- NAV ----- */
 .site-header {
@@ -94,14 +100,13 @@ button {
 }
 
 
-.red-button {
+.sign-in-button {
   background-color: #AC0000;
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  width: 81px;
-  height: 35px;
-  padding: 5px 10px;
+  width: fit-content;
+  padding: 5px 12px;
 }
 
 .hamburger {
@@ -136,6 +141,54 @@ button {
   padding: 0 1rem;
 }
 
-.hero-content {
-  
+.hero-title {
+  font-weight: 800;
+  font-size: 64px;
+}
+
+.hero-tagline {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.hero-actions {
+  font-style: italic;
+}
+
+.btn-book {
+  display: block;
+  width: fit-content; 
+  border: 3px solid #fff;
+  border-radius: 12px;
+  color: #fff;
+  background: transparent;
+  margin-inline: auto;   
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1;
+  padding: 10px 30px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.helper-subtext {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.hero-phone {
+  font-weight: 800;
+  font-size: 58px;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  color: white;
+}
+
+.helper-text {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.hero-subtitles {
+  font-size: 16px;
+  font-style: italic;
 }
