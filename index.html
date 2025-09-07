@@ -15,28 +15,33 @@
       <nav class="navbar">
         <div id="logo">
           <a href="#home">
-            <img src="assets/logo.svg" alt="Astar Driving School logo">
+            <img src="assets/logo-ver-1.svg" alt="Astar Driving School logo">
           </a>
         </div>
 
         <div id="main-nav">
           <ul class="nav-links">
             <li><a href="/index.html" aria-current="page">Home</a></li>
-            <li><a href="/behind-the-wheel-lessons.html">Behind The Wheel Lessons</a></li>
-            <li><a href="/use-our-car.html">Use Our Car</a></li>
+            <li>
+              <a href="/behind-the-wheel-lessons.html">
+                <span class="label-full">Behind The Wheel Lessons</span>
+                <span class="label-short">Lessons</span>
+              </a>
+            </li>
+            <li class="hamburger-item"><a href="/use-our-car.html">Use Our Car</a></li>
           </ul>
         </div>
         
         <div id="right-nav">
           <div class="nav-icons-container">
             <a href="https://maps.app.goo.gl/wWsRM2hdctx1C44JA" target="_blank">
-              <img class="nav-icon" src="assets/google-icon.png">
+              <img class="nav-icon" src="assets/google-icon.svg">
             </a>
             <a href="https://www.facebook.com/p/Astar-Driving-School-100063541421469" target="_blank">
-              <img class="nav-icon" src="assets/facebook-icon.png">
+              <img class="nav-icon" src="assets/fb-icon.svg">
             </a>
             <a href="#location" target="_blank">
-              <img class="nav-icon" src="assets/location-icon.png">
+              <img class="nav-icon" src="assets/map-icon.svg">
             </a>
           </div>
           
@@ -60,16 +65,87 @@
           <a class="hero-phone" href="tel:+17072545064" aria-label="Call Astar Driving School">707-254-5064</a>
           <p class="helper-text">For an Appointment</p>
         </div>
-        <p class="hero-subtitles">Astar Driving School has been established since 2008, with an excellent pass rate and price plans.</p>
+        <p class="hero-subtitles">Since 2008, Astar Driving School has built drivers&#39; confidence with proven pass rates and fair prices.</p>
+        <div class="image-wrapper">
+          <a href="#about" class="down-arrow" aria-label="Scroll to next section" viewBox="0 0 100 100">
+          <img src="assets/down-arrow.svg" alt="" aria-hidden="true">
+        </div>
+        </a>
       </div>
     </section>
 
+    <!-- ABOUT Section -->
+    <section id="about" class="about">
+      <div class="container">
 
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+        <h2 class="section-title">
+          Why Choose <span class="brand">Astar</span> Driving School
+        </h2>
+
+      
+        <div class="about-intro">
+          <aside class="value-prop">
+            <p>We are a <strong>full service driving school</strong> that offers adult and teen programs</p>
+          </aside>
+
+          <div class="reasons">
+            <article class="reason">
+              <h3>About Us</h3>
+              <p><!-- about text --></p>
+            </article>
+
+            <article class="reason">
+              <h3>Our Cars</h3>
+              <p><!-- cars text --></p>
+            </article>
+
+            <article class="reason">
+              <h3>Our Method</h3>
+              <p><!-- method text --></p>
+            </article>
+          </div>
+        </div>
+
+   
+        <div class="about-details">
+          <section class="hours">
+            <h3>Office Hours</h3>
+            <p class="kicker">We teach 7 days a week!</p>
+
+           
+            <dl class="hours-list">
+              <div><dt>Sunday</dt><dd>Closed</dd></div>
+              <div><dt>Monday</dt><dd>11:00am – 6:00pm</dd></div>
+              <div><dt>Tuesday</dt><dd>11:00am – 6:00pm</dd></div>
+              <div><dt>Wednesday</dt><dd>11:00am – 6:00pm</dd></div>
+              <div><dt>Thursday</dt><dd>11:00am – 6:00pm</dd></div>
+              <div><dt>Friday</dt><dd>11:00am – 6:00pm</dd></div>
+              <div><dt>Saturday</dt><dd>Closed</dd></div>
+            </dl>
+          </section>
+
+          <div class="programs">
+            <h3>Programs &amp; Classes</h3>
+            <p class="kicker">Contact us for our current pricing!</p>
+
+            <ul class="price-list">
+              <li><span class="item">Online Driver’s Ed</span><span class="price">$50</span></li>
+              <li><span class="item">Classroom Driver’s Ed</span><span class="price">$85</span></li>
+              <li><span class="item">Two-Hour Lesson</span><span class="price">$130</span></li>
+            </ul>
+
+            <div class="cta-row" role="group" aria-label="Booking options">
+              <a class="btn btn-primary" href="/booking">Book Now</a>
+              <span class="ht-or">or call</span>
+              <a class="phone" href="tel:+17072545064"><strong>707-254-5064</strong></a>
+              <a class="btn btn-secondary" href="/availability">Check Availability</a>
+            </div>
+
+            <p class="note">Driving lessons can be booked 7 days a week!</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </body>
 </html>
