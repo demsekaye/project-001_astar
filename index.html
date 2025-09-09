@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <script src="app.js" defer></script>
 
   </head>
 
@@ -59,105 +59,148 @@
     <main>
             <!-- HERO Section -->
       <section id="hero" class="hero">
-        <div>
-          <h1 class="business-name">Astar Driving School</h1>
-          <p class="hero-tagline">Safety &#183; Experience &#183; Professionalism</p>
+        <div class="hero-content">
+          <div>
+            <h1 class="business-name">Astar Driving School</h1>
+            <p class="hero-tagline">Safety &bull; Experience &bull; Professionalism</p>
+          </div>
+          
+          <div class="hero-actions">
+            <a class="btn-book" href="/booking">Book Now</a>
+            <p class="helper-text"  id="sub-text">or call</p>
+            <a class="hero-phone" href="tel:+17072545064" aria-label="Call Astar Driving School">707-254-5064</a>
+            <p class="helper-text">For an Appointment</p>
+          </div>
+          <p class="hero-subtitles">Since 2008, Astar Driving School has built drivers&#39; confidence with proven pass rates and fair prices.</p>
+          
+          <a href="#about" class="down-arrow" aria-label="Scroll to next section" viewBox="0 0 100 100">
+            <img src="assets/down-arrow.svg" alt="" aria-hidden="true">
+          </a>  
         </div>
         
-        <div class="hero-actions">
-          <a class="btn-book" href="/booking">Book Now</a>
-          <p class="helper-subtext">or call</p>
-          <a class="hero-phone" href="tel:+17072545064" aria-label="Call Astar Driving School">707-254-5064</a>
-          <p class="helper-text">For an Appointment</p>
-        </div>
-        <p class="hero-subtitles">Since 2008, Astar Driving School has built drivers&#39; confidence with proven pass rates and fair prices.</p>
-        
-        <a href="#about" class="down-arrow" aria-label="Scroll to next section" viewBox="0 0 100 100">
-          <img src="assets/down-arrow.svg" alt="" aria-hidden="true">
-        </a>
       </section>
 
 
       <!-- ABOUT Section -->
       <section id="about" class="about">
-        <div class="container">
-
-          <h2 class="section-title">
+        <h2 class="section-title">
             Why Choose <span class="brand">Astar</span> Driving School
-          </h2>
-
+         </h2>
         
-          <div class="about-intro">
-            <aside class="value-prop">
-              <p>We are a <strong>full service driving school</strong> that offers adult and teen programs</p>
-            </aside>
+        <p class="value-prop">We are a <strong>full service driving school</strong> that offers adult and teen programs</p>
 
-            <div class="reasons">
-              <article class="reason">
-                <h3>About Us</h3>
-                <p><!-- about text --></p>
-              </article>
+        <div class="about-overview">
+          <article>
+            <h3>About Us</h3>
+            <p>Our company was founded nearly 20 years ago in 2008 by Jodi Mapel. Jodi has always had a passion for driving and teaching. She decided to put two of her passions together and founded Astar Driving School.</p>
+          </article>
+          <article>
+            <h3>Our Cars</h3>
+            <p>We drive Ford Mustangs and Dodge Chargers. Not only are they cool and American made, but more importantly they are safe. Our cars are meticulously maintained and cleaned. Rest easy knowing that you or your child will be safe behind the wheel of our cars.</p>
+          </article>
+          <article>
+            <h3>Our Method</h3>
+            <p>Each lesson with Astar Driving School is one on one. We do not "piggy-back" as we believe students will learn better without the distraction of another student in the car. We teach students how to be safe on the road and not just how to pass a driving test. One on one instruction in real world circumstances.</p>
+          </article>
+        </div>
 
-              <article class="reason">
-                <h3>Our Cars</h3>
-                <p><!-- cars text --></p>
-              </article>
-
-              <article class="reason">
-                <h3>Our Method</h3>
-                <p><!-- method text --></p>
-              </article>
-            </div>
-          </div>
-
-    
-          <div class="about-details">
-            <section class="hours">
-              <h3>Office Hours</h3>
+        <div class="about-details">
+          <div>
+            <div>
+             <h3>Office Hours</h3>
               <p class="kicker">We teach 7 days a week!</p>
-
-            
-              <dl class="hours-list">
-                <div><dt>Sunday</dt><dd>Closed</dd></div>
-                <div><dt>Monday</dt><dd>11:00am – 6:00pm</dd></div>
-                <div><dt>Tuesday</dt><dd>11:00am – 6:00pm</dd></div>
-                <div><dt>Wednesday</dt><dd>11:00am – 6:00pm</dd></div>
-                <div><dt>Thursday</dt><dd>11:00am – 6:00pm</dd></div>
-                <div><dt>Friday</dt><dd>11:00am – 6:00pm</dd></div>
-                <div><dt>Saturday</dt><dd>Closed</dd></div>
-              </dl>
-            </section>
-
-            <div class="programs">
+            </div>
+            <dl class="hours-list">
+              <dt>Sunday</dt><dd>Closed</dd>
+              <dt>Monday</dt><dd>11:00am – 6:00pm</dd>
+              <dt>Tuesday</dt><dd>11:00am – 6:00pm</dd>
+              <dt>Wednesday</dt><dd>11:00am – 6:00pm</dd>
+              <dt>Thursday</dt><dd>11:00am – 6:00pm</dd>
+              <dt>Friday</dt><dd>11:00am – 6:00pm</dd>
+              <dt>Saturday</dt><dd>Closed</dd>
+            </dl>
+          </div>
+          <div>
+            <div>
               <h3>Programs &amp; Classes</h3>
               <p class="kicker">Contact us for our current pricing!</p>
-
-              <ul class="price-list">
+            </div>
+            <ul class="price-list">
                 <li><span class="item">Online Driver’s Ed</span><span class="price">$50</span></li>
                 <li><span class="item">Classroom Driver’s Ed</span><span class="price">$85</span></li>
                 <li><span class="item">Two-Hour Lesson</span><span class="price">$130</span></li>
-              </ul>
-
-              <div class="cta-row" role="group" aria-label="Booking options">
-                <a class="btn btn-primary" href="/booking">Book Now</a>
-                <span class="ht-or">or call</span>
-                <a class="phone" href="tel:+17072545064"><strong>707-254-5064</strong></a>
-                <a class="btn btn-secondary" href="/availability">Check Availability</a>
-              </div>
-
+            </ul>
+            <div class="about-actions" aria-label="Booking options">
+              <a class="btn btn-primary" href="/booking">Book Now</a>
+              <span class="ht-or">or call</span>
+              <a class="phone" href="tel:+17072545064"><strong>707-254-5064</strong></a>
+              <a class="btn btn-secondary" href="/availability">Check Availability</a>
               <p class="note">Driving lessons can be booked 7 days a week!</p>
             </div>
           </div>
-
         </div>
       </section>
+
+
       <!-- SERVICES Section -->
-      <section>
-        Services
+      <section class="services">
+        <h2 class="section-title">
+            Our <span class="brand">Services</span>
+         </h2>
+         <div>
+          <div>
+            <img src="assets/btw-icon.svg">
+            <h3>Behind-the-Wheel Lessons</h3>
+          </div>
+          <div>
+            <img src="assets/road-test-prep-icon.svg">
+            <h3>Road Test Preparation</h3>
+          </div>
+          <div>
+            <img src="assets/defensive-driving-icon.svg">
+            <h3>Defensive Driving/h3>
+          </div>
+          <div>
+            <img src="assets/parallel-parking-icon.svg">
+            <h3>Parallel Parking Practice</h3>
+          </div>
+          <div>
+            <img src="assets/highway-and-night-driving.svg">
+            <h3>Highway and Night Driving</h3>
+          </div>
+          <div>
+            <img src="assets/pick-up-and-drop-off-icon.svg">
+            <h3>Pick-up and Drop-off</h3>
+          </div>
+         </div>
       </section>
       <!-- INSTRUCTORS Section -->
       <section>
-        Instructors
+        <h2 class="section-title">
+          Meet Our <span class="brand">Instructors</span>
+        </h2>
+        <div>
+          <div>
+            <img>
+            <h3>Jim</h3>
+            <p>Owner | Operator | Instructor</p>
+          </div>
+          <div>
+            <img>
+            <h3>Maria</h3>
+            <p>Senior Instructor</p>
+          </div>
+          <div>
+            <img>
+            <h3>Sherri</h3>
+            <p>Instructor</p>
+          </div>
+          <div>
+            <img>
+            <h3>Dan</h3>
+            <p>Instructor</p>
+          </div>
+        </div>
       </section>
       <!-- REVIEWS Section -->
       <section>
