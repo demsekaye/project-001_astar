@@ -260,17 +260,13 @@ footer {
   display: none;
 }
 
-@media(min-width: 2100px) {
+@media(min-width: 2560px) {
   body {
     grid-template-columns: 8fr 2fr; /* Add sidebar column */
     grid-template-areas:
       "navbar sidebar"
       "main sidebar"
       "footer sidebar";
-  }
-
-  .sidebar {
-    display: block;
   }
 
   .hamburger {
@@ -281,10 +277,11 @@ footer {
 
 /* ----- HERO ----- */
 .hero {
+  position: relative;
   display: flex;
   height: 100dvh;
   height: 100vh;
-  padding-top: var(--nav-height);
+  padding: var(--nav-height), 0;
   background: linear-gradient(rgba(var(--rgb-black),.6), rgba(var(--rgb-black),.6)), url('assets/hero-bg.png') center 30%/cover no-repeat;
   transition: background-size 0.5s ease, background-position 0.5s ease;
   color: var(--text-secondary);
@@ -299,7 +296,7 @@ footer {
   height: max-content;
   width: max-content;
   flex-direction: column;
-  gap: clamp(30px, 12vh, 130px);
+  gap: clamp(120px, 6vw + 28px, 145px);
   justify-content: center;
   align-items: center;
   max-width: 100%;
@@ -308,13 +305,13 @@ footer {
 
 .business-name {
   font-weight: 700;
-  font-size: clamp(62px, var(--s-64), 67px);
+  font-size: clamp(47px, 2vw + 25px, 67px);
   letter-spacing: 2px;
 }
 
 .hero-tagline {
   font-weight: 400;
-  font-size: clamp(22px, var(--s-24), 27px);
+  font-size: clamp(20px, .75vw + 14px, 28px);
 }
 
 .hero-actions {
@@ -333,19 +330,19 @@ footer {
   border-radius: 12px;
   color: var(--text-secondary);
   font-weight: 600;
-  font-size: clamp(28px, var(--s-30), 33px);
-  padding: 15px 0;
+  font-size: clamp(26px, .94vw + 12px, 33px);
+  padding: calc(.375vw + 5px) 0;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 #subtext {
-  font-size: .5vw;
+  font-size: clamp(16px, .625vw + 7px, 22px);
 }
 
 .hero-phone {
   display: block;
   font-weight: 600;
-  font-size: clamp(34px, var(--s-36), 39px);
+  font-size: clamp(34px, 1.125vw + 14.4px, 39px);
   text-decoration: underline;
   text-underline-offset: 8px;
   color: white;
@@ -353,30 +350,29 @@ footer {
 
 .helper-text {
   font-weight: 400;
-  font-size: clamp(18px, var(--s-20), 23px);
+  font-size: clamp(16px, .625vw + 8px, 23px);
   font-style: italic;
 }
 
 
 .hero-subtitles {
-  position: relative;
-  top: 40px;
-  font-size: clamp(14px, var(--s-16), 19px);
+  font-size: clamp(12px, .5vw + 6.5px, 19px);
   font-style: italic;
+  font-weight: 200;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .hero-subtitles {
-    max-width: 80vw;
+    max-width: 65vw;
   }
 }
 
 .down-arrow {
+  position: absolute;
   width: 26px;
   height: 26px;
   padding: 5px;
-  position: relative;
-  top: 40px;
+  bottom: 10px;
 }
 
 .down-arrow img {
