@@ -188,10 +188,10 @@ nav.after-hero {
   }
 
   .main-nav {
-    gap: 0.75rem;
+    gap: 6vw;
     flex-wrap: nowrap;
     left: auto;
-    transform: translate(10%, -50%);
+    transform: translate(2%, -50%);
   }
   .logo {
     display: none;
@@ -205,7 +205,7 @@ nav.after-hero {
     top: calc(51px - 14% - 4vw);
   }
 }
-@media (max-width: 645px) {
+@media (max-width: 374px) {
   .main-nav .label-full  { display: none; }
   .main-nav .label-short { display: inline; }
 }
@@ -254,6 +254,13 @@ aside {
   font-size: 36px;
   font-weight:800;
   padding: 10px 0;
+  margin: 0px calc(2vw + 20px);
+}
+
+@media(max-width: 900px) {
+  .section-title {
+    font-size: clamp(12px, 5vw, 36px)
+  }
 }
 
 
@@ -457,7 +464,7 @@ aside {
 .about {
   min-height: 100dvh;
   min-height: 100vh;
-  padding: var(--nav-height) 60px;
+  padding: var(--nav-height) 0px;
 }
 
 .about-content {
@@ -530,6 +537,81 @@ aside {
 .kicker {
   font-size: 16px;
   color: var(--accent-primary);
+}
+
+/* mobile responsiveness */
+@media (max-width: 900px) {
+
+.about-content {
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding: 0 calc(6vw + 12px);
+}
+
+.about-overview {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: unset;
+  gap: 40px;
+}
+
+.value-prop{
+  font-size: calc(2.5vw + 12px);
+  width: 70%;
+  margin: 0 auto; 
+}
+
+.about-specifics * {
+  font-size: 3vw;
+}
+
+.about-specifics h3 {
+  padding: 10px 0;
+  font-size: 32px;
+  font-weight: 800;
+  color: white;;
+  text-shadow: 
+    -1px -1px 0 var(--accent-primary),
+     1px -1px 0 var(--accent-primary),
+    -1px  1px 0 var(--accent-primary),
+     1px  1px 0 var(--accent-primary);
+}
+
+.about-details {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 60px;
+}
+
+.about-details h3 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.about-details * {
+  font-size: 20px;
+}
+
+
+.office-hours {
+  text-align: center;
+}
+
+.hours-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4px 10px;
+  margin-inline: auto;
+}
+
+.hours-list * {
+  text-align: start;
+}
+
+.kicker {
+  font-size: 16px;
+  color: var(--accent-primary);
+}
 }
 
 
