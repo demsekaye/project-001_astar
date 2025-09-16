@@ -24,6 +24,7 @@
 a {
   text-decoration: none;
   cursor: pointer;
+  color: var(--text-primary);
 }
 
 html {
@@ -505,8 +506,9 @@ aside {
 
 .about-details {
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 60px;
+  grid-template-columns: max-content max-content;
+  gap: 190px;
+  justify-content: center;
 }
 
 .about-details h3 {
@@ -521,6 +523,7 @@ aside {
 
 .office-hours {
   text-align: center;
+  width: auto;
 }
 
 .hours-list {
@@ -532,11 +535,16 @@ aside {
 
 .hours-list * {
   text-align: start;
+  width: auto;
 }
 
 .kicker {
   font-size: 16px;
   color: var(--accent-primary);
+}
+
+.about-actions a {
+  display: inline-block;
 }
 
 /* mobile responsiveness */
@@ -549,47 +557,39 @@ aside {
 }
 
 .about-overview {
+  padding-top: 20px;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: unset;
-  gap: 40px;
+  gap: 30px;
 }
 
 .value-prop{
-  font-size: calc(2.5vw + 12px);
-  width: 70%;
+  font-size: calc(2.5vw + 10px);
+  width: 80%;
   margin: 0 auto; 
 }
 
 .about-specifics * {
-  font-size: 3vw;
+  font-size: clamp(14px, 3vw, 20px)
 }
 
 .about-specifics h3 {
-  padding: 10px 0;
-  font-size: 32px;
-  font-weight: 800;
-  color: white;;
-  text-shadow: 
-    -1px -1px 0 var(--accent-primary),
-     1px -1px 0 var(--accent-primary),
-    -1px  1px 0 var(--accent-primary),
-     1px  1px 0 var(--accent-primary);
+  font-size: clamp(20px, 4vw, 32px);
 }
 
 .about-details {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 60px;
+  gap: 10px;
 }
 
 .about-details h3 {
-  font-size: 32px;
-  font-weight: 800;
+  font-size: clamp(20px, 5vw, 32px);
 }
 
 .about-details * {
-  font-size: 20px;
+  font-size: 3vw;
 }
 
 
@@ -604,13 +604,9 @@ aside {
   margin-inline: auto;
 }
 
-.hours-list * {
-  text-align: start;
-}
 
 .kicker {
-  font-size: 16px;
-  color: var(--accent-primary);
+  font-size: 8px;
 }
 }
 
@@ -731,23 +727,143 @@ aside {
 
 /* GALLERY section */
 
+.gallery {
+  background: url('assets/gallery-bg.png') center 100%/cover no-repeat;
+}
+
+
 .gallery-pictures {
-  width: min(1000px, 100%);
-  margin: 0 auto;
-  columns: 3 300px;
-  column-gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
 }
 
 .gallery-pictures img {
+  height: 275px;
+  object-fit: cover;
   width: 100%;
 }
 
+.gallery-pictures img.wide {
+  grid-column: span 2;
+}
+
+.gallery-pictures img.narrow {
+  grid-column: span 1;
+}
+
+/* DRIVERS-ED Section */
+
+.drivers-ed {
+  display: flex;
+  padding: 0;
+  margin: 30px 0;
+  flex-direction: column;
+}
+
+.drivers-ed-content {
+  display: flex;
+  width: 100%;
+  height: 615px;
+  flex: 1;
+}
+
+.dmv-resources {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--accent-tertiary);
+  padding: 30px 20px;
+  gap: 14px;
+}
+
+.dmv-link img{
+  width: 268px;
+}
+
+.handbooks {
+  display: flex;
+  justify-content: space-between;
+  width: 860px;
+  margin: auto;
+}
+
+.handbooks > a > img {
+  height: 250px;
+  width: 160px;
+  object-fit: cover;
+}
+
+.book-apt-btn {
+  color: var(--accent-primary);
+  font-size: 16px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.book-apt-btn .link-arrow {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.aceable {
+  flex: 1;
+  background-color: var(--accent-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 50px;
+}
+
+.aceable > :first-child > :last-child {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.aceable-logo {
+  height: 83px;
+}
+
+
+.aceable-actions {
+  background-color: var(--text-secondary);
+  width: max-content;
+  align-items: center;
+  padding: 5px 120px;
+}
+
+.aceable-actions div {
+  margin: 30px 0;
+}
+
+#traffic-school {
+  background-color: #595959;
+}
+
+.aceable-actions p {
+  font-weight: 600;
+}
+
+.aceable-enroll-btn {
+  padding: 10px 140px;
+  background-color: var(--accent-primary);
+  display: inline-block;
+  color: var(--text-secondary);
+  margin: 10px 0;
+}
 
 /* USE-OUR-CAR-LINK Section */
 
 .use-our-car-link {
   max-height: fit-content;
   min-height: auto;
+}
+
+.use-our-car-link p {
+  margin: 10px 0;
 }
 
 .use-our-car-link a {
@@ -760,4 +876,36 @@ aside {
   font-size: 38px;
   font-weight: 800;
   color: var(--text-secondary);
+}
+
+footer img {
+  margin: 15px 0;
+}
+
+footer {
+  height: 381px;
+  background-color: var(--accent-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: center;
+}
+
+.footer-links {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+}
+
+footer img {
+  height: 40px;
+}
+
+footer * {
+  color: var(--accent-secondary);
+}
+
+footer :last-child {
+  font-size: 12px;
 }
