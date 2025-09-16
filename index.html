@@ -15,7 +15,7 @@
   <body>
     
     <nav>
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo" >
         <img src="assets/logo-bold.svg" alt="Astar Driving School logo">
       </a>
 
@@ -104,7 +104,6 @@
                 <p>Each lesson with Astar Driving School is one on one. We do not "piggy-back" as we believe students will learn better without the distraction of another student in the car. We teach students how to be safe on the road and not just how to pass a driving test. One on one instruction in real world circumstances.</p>
               </article>
             </div>
-            
           </div>
 
           <div class="about-details">
@@ -137,9 +136,11 @@
                 </ul>
                 <div class="about-actions" aria-label="Booking options">
                   <a class="red-button" href="/booking">Book Now</a>
-                  <span class="ht-or">or call</span>
+                  <span class="about-subtext">or call</span>
                   <a class="phone" href="tel:+17072545064"><strong>707-254-5064</strong></a>
-                  <a class="btn btn-secondary" href="/availability">Check Availability</a>
+                  <br>
+                  <span class="about-subtext">Not sure yet?</span>
+                  <a class="btn-check-availability" href="/availability">Check Availability</a>
                   <p class="kicker">Driving lessons can be booked 7 days a week!</p>
                 </div>
               </div>
@@ -228,23 +229,77 @@
         </div>
       </section>
       <!-- GALLERY Section -->
-      <section>
+      <section class="gallery">
         <h2 class="section-title">
           Photo <span class="brand">Gallery</span>
         </h2>
         <a href="#gallery">View all</a>
-        <gallery-pictures>
-          <img width="300px" src="assets/image-1.jpg">
-          <img width="300px"  src="assets/image-2.jpg">
-          <img width="300px"  src="assets/image-3.jpg"alt="">
-          <img width="300px"  src="assets/image-4.jpeg">
-          <img width="300px"  src="assets/image-5.jpeg">
-          <img width="300px"  src="assets/image-6.jpg"alt="">
-          <img width="300px"  src="assets/image-7.jpg">
-          <img width="300px"  src="assets/image-8.jpg">
-          <img width="300px"  src="assets/image-9.jpg"alt="">
-        </gallery-pictures>
+        <div class="gallery-pictures">
+          <img class="wide" src="assets/image-1.jpg">
+          <img class="narrow" src="assets/image-2.jpg">
+          <img class="wide" src="assets/image-3.jpg"alt="">
+          <img class="narrow" src="assets/image-4.jpeg">
+          <img class="narrow" src="assets/image-5.jpeg">
+          <img class="wide" src="assets/image-6.jpg"alt="">
+          <img class="narrow" src="assets/image-7.jpg">
+          <img class="wide" src="assets/image-8.jpg">
+        </div>
       </section>
+
+      <!-- DRIVERS ED Section -->
+      <section class="drivers-ed">
+        <h2 class="section-title">
+          Driver's Education <span class="brand">Resources</span> 
+        </h2>
+        <div class="drivers-ed-content">
+          <div class="dmv-resources">
+            <a href="#dmv" class="dmv-link">
+              <img src="assets/dmv-print.svg">
+            </a>
+            <a>www.dmv.ca.gov</a>
+            <div class="handbooks">
+              <a>
+                <img src="assets/handbook-1.png">
+              </a>
+              <a>
+                <img src="assets/handbook-2.png">
+              </a>
+              <a>
+                <img src="assets/handbook-3.png">
+              </a>
+              <a>
+                <img src="assets/handbook-4.png">
+              </a>
+              <a>
+                <img src="assets/handbook-5.png">
+              </a>
+            </div>
+            <a class="book-apt-btn">
+              Book Appointment <span class="link-arrow">↗</span>
+            </a>
+          </div>
+          <div class="aceable">
+            <div>
+              <a>
+                <img src="assets/aceable-logo.svg" class="aceable-logo">
+              <a href="#aceable">www.aceable.com</a>
+              </a>
+            </div>
+            <div class="aceable-actions">
+              <div>
+                <p>California Drivers Ed Online</p>
+                <a class="aceable-enroll-btn" href="#aceable-enroll-de">Enroll Now</a>
+              </div>
+              <div>
+                <p>California Traffic School Online</p>
+                <a id="traffic-school" class="aceable-enroll-btn" href="#aceable-enroll-ts">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
       <!-- USE-OUR-CAR-LINK Section -->
       <section class="use-our-car-link">
         <p>Need a car for your driving test?</p>
@@ -252,10 +307,16 @@
       </section>
     </main>
 
-    <footer></footer>
-
-
-
+    <footer>
+      <img src="assets/logo-with-border.svg">
+      <div class="footer-links">
+        <a href="#facebook">Facebook</a>
+        <a href="#google-maps">Google Maps</a>
+        <a href="#Yelp">Yelp</a>
+      </div>
+      <p>jmapelstar@gmail.com | Tel: 707-254-5064</p>
+      <a>© 2025 by Team Genevieve</a>
+    </footer>
 
   </body>
 </html>

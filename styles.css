@@ -24,6 +24,7 @@
 a {
   text-decoration: none;
   cursor: pointer;
+  color: var(--text-primary);
 }
 
 html {
@@ -49,12 +50,11 @@ body {
 }
 
 section {
-  width: 100dvw;
-  width: 100svw;
-  width: 100vw;
+  max-width: 100vw;
   min-height: 100dvh;
   min-height: 100svh;
   padding: 51px 0;
+  overflow-x: hidden;
 }
 
 .red-button {
@@ -187,35 +187,28 @@ nav.after-hero {
     background-position: center;
     color: transparent;
   }
-}
-@media (max-width: 866px) {
-  .main-nav .hamburger-item {
-    display: none;
+
+  .main-nav {
+    gap: 6vw;
+    flex-wrap: nowrap;
+    left: auto;
+    transform: translate(2%, -50%);
   }
-}
-@media (max-width: 645px) {
-  .main-nav .label-full  { display: none; }
-  .main-nav .label-short { display: inline; }
-  .logo  {
-    height: clamp(25px, 7vw, 43.35px);
-  }
-}
-@media (max-width: 300px) {
   .logo {
     display: none;
   }
-  #main-nav {
-    position: static;
-    left: auto;
-    top: auto;
-    transform: none;
-    flex: 1 1 auto;  
-    min-width: 0; 
+}
+@media (max-width: 866px) {
+  .main-nav .hamburger-item {
+    display: none;}
+  .logo  {
+    height: calc(3vw + 30px);
+    top: calc(51px - 14% - 4vw);
   }
-  .main-nav {
-    gap: 0.75rem;
-    flex-wrap: nowrap;
-  }
+}
+@media (max-width: 374px) {
+  .main-nav .label-full  { display: none; }
+  .main-nav .label-short { display: inline; }
 }
 @media (max-width: 1110px) { 
   .nav-icons-container {
@@ -246,15 +239,15 @@ footer {
 }
 
 
-  aside {
-    position: fixed;
-    width: 300px;
-    display: none;
-  }
+aside {
+  position: fixed;
+  width: 300px;
+  display: none;
+}
 
-  .show{
-    display: block;
-  }
+.show{
+  display: block;
+}
 
 
 .section-title{
@@ -262,6 +255,13 @@ footer {
   font-size: 36px;
   font-weight:800;
   padding: 10px 0;
+  margin: 0px calc(2vw + 20px);
+}
+
+@media(max-width: 900px) {
+  .section-title {
+    font-size: clamp(12px, 5vw, 36px)
+  }
 }
 
 
@@ -284,14 +284,12 @@ footer {
 }
 
 
+
+
 /* ----- HERO ----- */
 .hero {
   position: relative;
   display: flex;
-  min-width: 100dvw;
-  min-height: 100dvh;
-  min-height: 100vh;
-  min-height: 100svh;
   padding: var(--nav-height), 0;
   background: linear-gradient(rgba(var(--rgb-black),.6), rgba(var(--rgb-black),.6)), url('assets/hero-bg.png') center 35%/cover no-repeat;
   transition: background-size 0.5s ease, background-position 0.5s ease;
@@ -405,13 +403,10 @@ footer {
     gap: clamp(90px, 7.4vw , 145px);
   }
   .business-name {
-    font-size: clamp(13px, 2.6vw + 12.8px, 67px);
+    font-size: clamp(13px, 2.6vw + 12.8px, 47px);
   }
   .hero-tagline {
-    font-size: clamp(12px, 1.12vw + 2.4px, 28px);
-  }
-  .hero-actions {
-    gap: 16px;
+    font-size: clamp(12px, 1.12vw + 2.4px, 20px);
   }
   .btn-book {
     font-size: clamp(14px, 1.4vw + 3px, 33px);
@@ -470,7 +465,7 @@ footer {
 .about {
   min-height: 100dvh;
   min-height: 100vh;
-  padding: var(--nav-height) 60px;
+  padding: var(--nav-height) 0px;
 }
 
 .about-content {
@@ -511,8 +506,9 @@ footer {
 
 .about-details {
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 60px;
+  grid-template-columns: max-content max-content;
+  gap: 190px;
+  justify-content: center;
 }
 
 .about-details h3 {
@@ -527,6 +523,7 @@ footer {
 
 .office-hours {
   text-align: center;
+  width: auto;
 }
 
 .hours-list {
@@ -538,11 +535,79 @@ footer {
 
 .hours-list * {
   text-align: start;
+  width: auto;
 }
 
 .kicker {
   font-size: 16px;
   color: var(--accent-primary);
+}
+
+.about-actions a {
+  display: inline-block;
+}
+
+/* mobile responsiveness */
+@media (max-width: 900px) {
+
+.about-content {
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding: 0 calc(6vw + 12px);
+}
+
+.about-overview {
+  padding-top: 20px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: unset;
+  gap: 30px;
+}
+
+.value-prop{
+  font-size: calc(2.5vw + 10px);
+  width: 80%;
+  margin: 0 auto; 
+}
+
+.about-specifics * {
+  font-size: clamp(14px, 3vw, 20px)
+}
+
+.about-specifics h3 {
+  font-size: clamp(20px, 4vw, 32px);
+}
+
+.about-details {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.about-details h3 {
+  font-size: clamp(20px, 5vw, 32px);
+}
+
+.about-details * {
+  font-size: 3vw;
+}
+
+
+.office-hours {
+  text-align: center;
+}
+
+.hours-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4px 10px;
+  margin-inline: auto;
+}
+
+
+.kicker {
+  font-size: 8px;
+}
 }
 
 
@@ -662,23 +727,143 @@ footer {
 
 /* GALLERY section */
 
+.gallery {
+  background: url('assets/gallery-bg.png') center 100%/cover no-repeat;
+}
+
+
 .gallery-pictures {
-  width: min(1000px, 100%);
-  margin: 0 auto;
-  columns: 3 300px;
-  column-gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
 }
 
 .gallery-pictures img {
+  height: 275px;
+  object-fit: cover;
   width: 100%;
 }
 
+.gallery-pictures img.wide {
+  grid-column: span 2;
+}
+
+.gallery-pictures img.narrow {
+  grid-column: span 1;
+}
+
+/* DRIVERS-ED Section */
+
+.drivers-ed {
+  display: flex;
+  padding: 0;
+  margin: 30px 0;
+  flex-direction: column;
+}
+
+.drivers-ed-content {
+  display: flex;
+  width: 100%;
+  height: 615px;
+  flex: 1;
+}
+
+.dmv-resources {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--accent-tertiary);
+  padding: 30px 20px;
+  gap: 14px;
+}
+
+.dmv-link img{
+  width: 268px;
+}
+
+.handbooks {
+  display: flex;
+  justify-content: space-between;
+  width: 860px;
+  margin: auto;
+}
+
+.handbooks > a > img {
+  height: 250px;
+  width: 160px;
+  object-fit: cover;
+}
+
+.book-apt-btn {
+  color: var(--accent-primary);
+  font-size: 16px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.book-apt-btn .link-arrow {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.aceable {
+  flex: 1;
+  background-color: var(--accent-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 50px;
+}
+
+.aceable > :first-child > :last-child {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.aceable-logo {
+  height: 83px;
+}
+
+
+.aceable-actions {
+  background-color: var(--text-secondary);
+  width: max-content;
+  align-items: center;
+  padding: 5px 120px;
+}
+
+.aceable-actions div {
+  margin: 30px 0;
+}
+
+#traffic-school {
+  background-color: #595959;
+}
+
+.aceable-actions p {
+  font-weight: 600;
+}
+
+.aceable-enroll-btn {
+  padding: 10px 140px;
+  background-color: var(--accent-primary);
+  display: inline-block;
+  color: var(--text-secondary);
+  margin: 10px 0;
+}
 
 /* USE-OUR-CAR-LINK Section */
 
 .use-our-car-link {
   max-height: fit-content;
   min-height: auto;
+}
+
+.use-our-car-link p {
+  margin: 10px 0;
 }
 
 .use-our-car-link a {
@@ -691,4 +876,36 @@ footer {
   font-size: 38px;
   font-weight: 800;
   color: var(--text-secondary);
+}
+
+footer img {
+  margin: 15px 0;
+}
+
+footer {
+  height: 381px;
+  background-color: var(--accent-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: center;
+}
+
+.footer-links {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+}
+
+footer img {
+  height: 40px;
+}
+
+footer * {
+  color: var(--accent-secondary);
+}
+
+footer :last-child {
+  font-size: 12px;
 }
