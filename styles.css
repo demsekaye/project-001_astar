@@ -132,7 +132,6 @@ nav.after-hero {
 
 
 
-
 /* Right Nav*/
 
 #right-nav {
@@ -878,19 +877,22 @@ footer {
   background-color: var(--accent-primary);
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 10px;
   justify-content: center;
+  align-items: center;
 }
 
 .footer-links {
   display: inline-flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 60px;
   justify-content: center;
+  margin: 20px 0;
 }
 
 footer img {
   height: 40px;
+  margin-bottom: 36px;
 }
 
 footer * {
@@ -901,6 +903,10 @@ footer :last-child {
   font-size: 12px;
 }
 
+.footer-contact {
+  display: flex;
+  gap: 20px;
+}
 
 
 
@@ -1074,4 +1080,173 @@ form img {
   background-color: var(--text-secondary);
   color: var(--text-primary);
   border: 1px solid var(--text-primary);
+}
+
+
+/***** BEHIND-THE-WHEEL page *****/
+.btw-main {
+  display: flex;
+  justify-content: center;
+  padding: 100px 180px 16px 180px;
+}
+
+.btw-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+}
+
+.btw-title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.btw-summary {
+  font-size: 20px;
+  color: #595959;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.btw-note {
+  font-size: 16px;
+  color: #595959;
+  font-weight: 300;
+}
+
+.btw-age-category {
+  display: inline-flex;
+  width: fit-content;
+  border: 1px solid var(--accent-tertiary);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.btw-age-category button {
+  flex: 1;
+  background: var(--text-secondary);
+  font-size: 14px;
+  padding: 14px 70px;
+}
+
+.btw-age-category button.active {
+  background: var(--accent-primary);
+  color: var(--text-secondary);
+}
+
+.package-list {
+  display: flex;
+  gap: 131px;
+  margin: 20px 0;
+}
+
+.package {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid var(--accent-primary);
+  width: 375px;
+  height: 458px;
+  border-radius: 10px;
+  padding: 39px 36px;
+  justify-content: center;
+}
+
+.package h2 {
+  font-size: 24px;
+  line-height: 20px;
+  color: #F26A8D;
+  font-weight: 700;
+}
+
+#package-six-hours h2 {
+  color: #DA5552;
+}
+#package-six-hours button {
+  background-color: rgba(218, 85, 82, .5)
+;
+}
+
+#package-eight-hours h2 {
+  color: #880D1E;
+}
+#package-eight-hours button {
+  background-color: rgba(136, 13, 30, .5)
+;
+}
+
+.price {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.package hr {
+  height: 1px;
+  background: var(--accent-tertiary);
+}
+
+.package li {
+  list-style: disc;
+  text-indent: 0;
+  text-align: left;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.package ul {
+  list-style-position: inside;
+  padding-left: 20px;
+  padding-right: 4px;
+}
+
+.package button {
+  background-color: rgba(242, 106, 141, 0.5);
+  border-radius: 10px;
+  padding: 12px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.check-availability-link {
+  margin: 6px 0;
+}
+
+.check-availability-link p{
+  display: inline;
+  font-size: 16px;
+}
+.check-availability-link button{
+  background-color: var(--accent-primary);
+  color: var(--text-secondary);
+  font-size: 20px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.btw-use-our-car-link {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  align-items: center;
+  gap: 12px;
+}
+
+.btw-use-our-car-link a {
+  width: fit-content;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--text-secondary);
+  background-color: var(--text-primary);
+  padding: 10px 18px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btw-use-our-car-link p {
+  color: #595959;
 }

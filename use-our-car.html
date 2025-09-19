@@ -11,42 +11,42 @@
 </head>
 
 <body>
-  <header class="site-header">
-      <nav class="navbar">
-        <div id="logo">
-          <a href="#home">
-            <img src="assets/logo.svg" alt="Astar Driving School logo">
-          </a>
-        </div>
+  <nav>
+    <a href="index.html" class="logo" >
+      <img src="assets/logo-bold.svg" alt="Astar Driving School logo">
+    </a>
 
-        <div id="main-nav">
-          <ul class="nav-links">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/behind-the-wheel-lessons.html">Behind The Wheel Lessons</a></li>
-            <li><a href="/use-our-car.html" aria-current="page">Use Our Car</a></li>
-          </ul>
-        </div>
-        
-        <div id="right-nav">
-          <div class="nav-icons-container">
-            <a href="https://maps.app.goo.gl/wWsRM2hdctx1C44JA" target="_blank">
-              <img class="nav-icon" src="assets/google-icon.svg">
-            </a>
-            <a href="https://www.facebook.com/p/Astar-Driving-School-100063541421469" target="_blank">
-              <img class="nav-icon" src="assets/fb-icon.svg">
-            </a>
-            <a href="#location" target="_blank">
-              <img class="nav-icon" src="assets/map-icon.svg">
-            </a>
-          </div>
-          
-          <a href="/login" class="sign-in-button">Sign In</a>
+    <ul class="main-nav">
+      <li><a href="/index.html">Home</a></li>
+      <li>
+        <a href="/behind-the-wheel-lessons.html">
+          <span class="label-full">Behind The Wheel Lessons</span>
+          <span class="label-short">Lessons</span>
+        </a>
+      </li>
+      <li aria-current="page" class="hamburger-item"><a href="/use-our-car.html">Use Our Car</a></li>
+    </ul>
+    
+    <div id="right-nav">
+      <div class="nav-icons-container">
+        <a href="https://maps.app.goo.gl/wWsRM2hdctx1C44JA" target="_blank">
+          <img class="nav-icon" src="assets/google-icon.svg">
+        </a>
+        <a href="https://www.facebook.com/p/Astar-Driving-School-100063541421469" target="_blank">
+          <img class="nav-icon" src="assets/fb-icon.svg">
+        </a>
+        <a href="#location" target="_blank">
+          <img class="nav-icon" src="assets/map-icon.svg">
+        </a>
+      </div>
+      
+      <a href="/login" class="sign-in-button">Sign In</a>
 
-          <button class="hamburger" aria-label="Menu">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-      </nav>
-    </header>
+      <a href="#sidebar" class="hamburger" aria-label="Menu" onclick="toggleSidebar()">
+        <img src="assets/hamburger-icon.png">
+      </a>
+
+    </div>
+  </nav>
 </body>
 </html>

@@ -11,42 +11,113 @@
 </head>
 
 <body>
-  <header class="site-header">
-      <nav class="navbar">
-        <div id="logo">
-          <a href="#home">
-            <img src="assets/logo-with-border.svg" alt="Astar Driving School logo">
-          </a>
-        </div>
+  <nav>
+    <a href="index.html" class="logo" >
+      <img src="assets/logo-bold.svg" alt="Astar Driving School logo">
+    </a>
 
-        <div id="main-nav">
-          <ul class="nav-links">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/behind-the-wheel-lessons.html" aria-current="page">Behind The Wheel Lessons</a></li>
-            <li><a href="/use-our-car.html">Use Our Car</a></li>
+    <ul class="main-nav">
+      <li><a href="/index.html">Home</a></li>
+      <li>
+        <a href="/behind-the-wheel-lessons.html" aria-current="page">
+          <span class="label-full">Behind The Wheel Lessons</span>
+          <span class="label-short">Lessons</span>
+        </a>
+      </li>
+      <li class="hamburger-item"><a href="/use-our-car.html">Use Our Car</a></li>
+    </ul>
+    
+    <div id="right-nav">
+      <div class="nav-icons-container">
+        <a href="https://maps.app.goo.gl/wWsRM2hdctx1C44JA" target="_blank">
+          <img class="nav-icon" src="assets/google-icon.svg">
+        </a>
+        <a href="https://www.facebook.com/p/Astar-Driving-School-100063541421469" target="_blank">
+          <img class="nav-icon" src="assets/fb-icon.svg">
+        </a>
+        <a href="#location" target="_blank">
+          <img class="nav-icon" src="assets/map-icon.svg">
+        </a>
+      </div>
+      
+      <a href="/login" class="sign-in-button">Sign In</a>
+
+      <a href="#sidebar" class="hamburger" aria-label="Menu" onclick="toggleSidebar()">
+        <img src="assets/hamburger-icon.png">
+      </a>
+
+    </div>
+  </nav>
+
+  <main class="btw-main">
+    <div class="btw-content">
+      <h1 class="btw-title">Behind The Wheel Lessons</h1>
+      <p class="btw-summary">Learn to drive with confidence through ASTAR&apos;s DMV-certified Behind the Wheel lessons. Our professional instructors provide patient, one-on-one training to help teens and adults master the skills needed for safe driving and DMV testing success.</p>
+      <p class="btw-note">Please contact us directly for an accurate and up-to-date pricing quote.</p>
+      <div class="btw-age-category">
+        <button class="active">Teen</button>
+        <button>Adult</button>
+      </div>
+
+      <div class="package-list">
+        <div class="package">
+          <h2>2-Hour Package</h2>
+          <p class="price">$130</p>
+          <hr>
+          <ul>
+            <li>A focused lesson perfect for reviewing key driving skills or preparing for the DMV test.</li>
+            <li>Free pick-up and drop-off.</li>
           </ul>
+          <button>Book Lesson</button>
         </div>
-        
-        <div id="right-nav">
-          <div class="nav-icons-container">
-            <a href="https://maps.app.goo.gl/wWsRM2hdctx1C44JA" target="_blank">
-              <img class="nav-icon" src="assets/google-icon.svg">
-            </a>
-            <a href="https://www.facebook.com/p/Astar-Driving-School-100063541421469" target="_blank">
-              <img class="nav-icon" src="assets/fb-icon.svg">
-            </a>
-            <a href="#location" target="_blank">
-              <img class="nav-icon" src="assets/map-icon.svg">
-            </a>
-          </div>
-          
-          <a href="/login" class="sign-in-button">Sign In</a>
+        <div class="package" id="package-six-hours">
+          <h2>6-Hour Package</h2>
+          <p class="price">$220</p>
+          <hr>
+          <ul>
+            <li>Build stronger confidence with more time behind the wheel to practice core driving techniques.</li>
+            <li>Free pick-up and drop-off.</li>
+          </ul>
+          <button>Book Lesson</button>
+        </div>
+        <div class="package" id="package-eight-hours">
+          <h2>8-Hour Package</h2>
+          <p class="price">$300</p>
+          <hr>
+          <ul>
+            <li>A comprehensive package designed to fully prepare teens for safe, independent driving.</li>
+            <li>Free pick-up and drop-off.</li>
+          </ul>
+          <button>Book Lesson</button>
+        </div>
+      </div>
 
-          <button class="hamburger" aria-label="Menu">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-      </nav>
-    </header>
+      <div class="check-availability-link">
+        <p>Not sure yet?</p>
+        <button>Check Availability</button>
+      </div>
+
+      <div class="btw-use-our-car-link" href="/use-our-car.html">
+        <a>Use Our Car</a>
+        <p>Need a vehicle for your DMV road test? ASTAR provides a student car for testing. To qualify, you must book at least one lesson with us prior to using our car for the exam.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <img src="assets/logo-with-border.svg">
+    <div class="footer-links">
+      <a href="#facebook">Facebook</a>
+      <a href="#google-maps">Google Maps</a>
+      <a href="#Yelp">Yelp</a>
+    </div>
+    <div class="footer-contact">
+      <span>Jmapelastar@gmail.com</span>
+      <span>|</span>
+      <span>Tel: 707-254-5064</span>
+    </div>
+
+    <a>© 2025 by Team Genevieve</a>
+  </footer>
 </body>
 </html>
