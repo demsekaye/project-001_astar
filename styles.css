@@ -272,7 +272,7 @@ aside {
 
 @media(min-width: 2560px) {
   body {
-    grid-template-columns: 8fr 2fr; /* Add sidebar column */
+    grid-template-columns: 8fr 2fr; 
     grid-template-areas:
       "navbar sidebar"
       "main sidebar"
@@ -873,7 +873,7 @@ footer img {
 }
 
 footer {
-  height: 381px;
+  height: 367.35px;
   background-color: var(--accent-primary);
   display: flex;
   flex-direction: column;
@@ -892,7 +892,7 @@ footer {
 
 footer img {
   height: 40px;
-  margin-bottom: 36px;
+  margin-bottom: 26px;
 }
 
 footer * {
@@ -1296,3 +1296,14 @@ form img {
   font-weight: 600;
 }
 
+
+
+#log-in-content{
+  width: 982px;
+  height: 962px;
+  margin: 0 auto;
+}
+
+.forgot-password {
+  margin-top: -10px;
+}
