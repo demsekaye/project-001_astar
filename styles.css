@@ -254,9 +254,9 @@ aside {
 
 
 .section-title{
-  line-height: 1.5;
   font-size: clamp(21.6px, calc(1.6vw + 4.32px), 36px);
   font-weight: 800;
+  line-height: 1.5;
 }
 
 
@@ -441,12 +441,15 @@ aside {
 }
 
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* ----- ABOUT ----- */
 
 #about {
-  display: flex;
-  flex-direction: column;
   gap: clamp(9.60px, calc(0.80vw + 0.66px), 16px);
   padding-top: clamp(12.00px, calc(0.90vw + 2.81px), 20px);
   scroll-margin-top: 51px;
@@ -454,8 +457,6 @@ aside {
 
 .about-content {
   flex: 1;
-  display: flex;
-  flex-direction: column;
   gap: clamp(21.60px, calc(1.70vw + 3.46px), 36px);
 }
 
@@ -529,7 +530,7 @@ aside {
   width: clamp(530.5px, calc(44.2vw + 219px), 1061px); 
   gap: clamp(98px, calc(10.2vw + .17px), 196px);
   height: 100%;
-  padding: clamp(4.80px, calc(0.40vw + 0.33px), 8px) 0 clamp(18.00px, calc(1.40vw + 3.22px), 30px); 0;
+  padding: clamp(4.80px, calc(0.40vw + 0.33px), 8px) 0 clamp(18.00px, calc(1.40vw + 3.22px), 30px); 
 }
 
 .px-24 {
@@ -540,16 +541,17 @@ aside {
   font-size: clamp(11.2px, calc(.7vw + 2.64px), 16px);
 }
 
-.second-row-item {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: clamp(18.00px, calc(.014vw + 3.22px), 30px);
+.h-32{
+  font-size: clamp(22.4px, calc(1.3vw + 7.26px), 32px);
 }
 
-.h-32-700 {
-  font-size: clamp(22.4px, calc(1.3vw + 7.26px), 32px);
+.fw-700 {
   font-weight: 700;
+}
+
+.second-row-item {
+  flex: 1;
+  gap: clamp(18.00px, calc(1.4vw + 3.22px), 30px);
 }
 
 .hours-list {
@@ -566,17 +568,10 @@ aside {
 .kicker {
   font-size: clamp(9.8px, calc(.6vw + 2.56px), 14px); 
   color: rgba(247, 250, 76, 0.8);
-}
-
-.programs-and-classes-content {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(12px, calc(.6vw + 8.74px), 20px);
+  line-height: 2;
 }
 
 .about-actions {
-  display: flex;
-  flex-direction: column;
   gap: clamp(6px, calc(.3vw + 4.37px), 10px);
 }
 
@@ -584,9 +579,7 @@ aside {
   display: inline-block;
 }
 
-.price-list {
-  display: flex;
-  flex-direction: column;
+.gap-20 {
   gap: clamp(12px, calc(.6vw + 8.74px), 20px);
 }
 
@@ -601,43 +594,44 @@ aside {
 }
 
 .border-radius-10 {
-  border-radius: 10px;
+  border-radius: clamp(6.00px, calc(0.30vw + 4.37px), 10px);
 }
 
 .about-phone {
   color: var(--text-secondary);
   text-decoration: underline;
-  font-weight: 700;
+  font-weight: 600;
   text-shadow: 0 0 .5px var(--text-secondary), 0 0 .5px var(--text-secondary), 0 0 1px var(--text-secondary);
   text-underline-offset: 4px;
 }
 
 .about-subtext {
-  margin: 0 8px;
+  margin: 0 clamp(4.00px, calc(0.30vw + 2.31px), 8px);
 }
 
 .btn-check-availability {
   background-color: var(--accent-secondary);
   padding: clamp(4.80px, calc(0.20vw + 4.29px), 8px) clamp(12.00px, calc(1.00vw + 0.82px), 20px);
-  border-radius: clamp(6.00px, calc(0.30vw + 4.37px), 10px);
 }
 
 /* SERVICES Section */
 
-.services {
+#services {
   background-color: var(--accent-tertiary);
+  padding: clamp(33.00px, calc(2.60vw + 5.24px), 55px) clamp(42.00px, calc(3.30vw + 6.85px), 70px) clamp(48.00px, calc(3.70vw + 9.24px), 80px) clamp(45.00px, calc(3.50vw + 8.04px), 75px);
+  gap: clamp(27.00px, calc(2.10vw + 4.83px), 45px);
 }
 
 .services-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 200px);
-  gap: 20px 25px;
+  grid-template-rows: repeat(2, clamp(120.00px, calc(9.40vw + 20.13px), 200px));
+  gap: clamp(9.00px, calc(0.70vw + 1.61px), 15px);
 }
 
 .services-list img {
-  width: 91.75px;
-  height: 91.75px;
+  width: clamp(55.05px, calc(4.30vw + 9.48px), 91.75px);
+  height: clamp(55.05px, calc(4.30vw + 9.48px), 91.75px);
 }
 
 .services-list div {
