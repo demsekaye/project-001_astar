@@ -12,7 +12,7 @@
 
   </head>
 
-  <body>
+  <body class="main-nav-item">
     
     <nav>
       <a href="index.html" class="logo" >
@@ -58,7 +58,7 @@
 
     <main>
             <!-- HERO Section -->
-      <section class="hero">
+      <section id="hero" class="fill-viewport">
         <div class="hero-content">
           <div>
             <h1 class="business-name">Astar Driving School</h1>
@@ -82,70 +82,76 @@
 
 
       <!-- ABOUT Section -->
-      <section id="about" class="about">
-        <h2 class="section-title">
+      <section id="about">
+        <h1 class="section-title">
             Why Choose <span class="brand">Astar</span> Driving School
-         </h2>
+        </h1>
         
         <div class="about-content">
-          <div class="about-overview">
+          <div class="about-first-row">
             <p class="value-prop">We are a <strong>full service driving school</strong> that offers adult and teen programs</p>
-            <div class="about-specifics">
+            <div class="about-astar px-20">
               <article>
-                <h3>About Us</h3>
-                <p>Our company was founded nearly 20 years ago in 2008 by Jodi Mapel. Jodi has always had a passion for driving and teaching. She decided to put two of her passions together and founded Astar Driving School.</p>
+                <h2 class="px-36">About Us</h2>
+                <p class="font-weight-300">Our company was founded nearly 20 years ago in <span>2008 by Jodi Mapel</span>. Jodi has always had a passion for driving and teaching. She decided to put two of her passions together and founded Astar Driving School.</p>
               </article>
               <article>
-                <h3>Our Cars</h3>
-                <p>We drive Ford Mustangs and Dodge Chargers. Not only are they cool and American made, but more importantly they are safe. Our cars are meticulously maintained and cleaned. Rest easy knowing that you or your child will be safe behind the wheel of our cars.</p>
+                <h2 class="px-36">Our Cars</h2>
+                <p class="font-weight-300">We drive <span>Mustangs</span>  and <span>Dodge Chargers</span>. Not only are they cool and American made, but more importantly they are safe. Our cars are meticulously maintained and cleaned. Rest easy knowing that you or your child will be safe behind the wheel of our cars.</p>
               </article>
               <article>
-                <h3>Our Method</h3>
-                <p>Each lesson with Astar Driving School is one on one. We do not "piggy-back" as we believe students will learn better without the distraction of another student in the car. We teach students how to be safe on the road and not just how to pass a driving test. One on one instruction in real world circumstances.</p>
+                <h2 class="px-36">Our Method</h2>
+                <p class="font-weight-300">Each lesson with Astar Driving School is <span>one on one</span>. We do not "piggy-back" as we believe students will learn better without the distraction of another student in the car. We teach students how to be safe on the road and not just how to pass a driving test. One on one instruction in real world circumstances.</p>
               </article>
             </div>
           </div>
 
-          <div class="about-details">
-            <div class="office-hours">
-              <div class="details-heading">
-                <h3>Office Hours</h3>
-                <p class="kicker">We teach 7 days a week!</p>
-              </div>
-              
-              <dl class="hours-list">
-                <dt>Sunday</dt><dd>Closed</dd>
-                <dt>Monday</dt><dd>11:00am – 6:00pm</dd>
-                <dt>Tuesday</dt><dd>11:00am – 6:00pm</dd>
-                <dt>Wednesday</dt><dd>11:00am – 6:00pm</dd>
-                <dt>Thursday</dt><dd>11:00am – 6:00pm</dd>
-                <dt>Friday</dt><dd>11:00am – 6:00pm</dd>
-                <dt>Saturday</dt><dd>Closed</dd>
-              </dl>
-            </div>
-            <div class="programs-and-classes">
-              <div class="details-heading">
-                <h3>Programs &amp; Classes</h3>
-                <p class="kicker">Contact us for our current pricing!</p>
-              </div>
-              <div class="about-prices">
-                <ul class="price-list">
-                    <li><span class="item">Online Driver&rsquo;s Ed</span><span class="price">$50</span></li>
-                    <li><span class="item">Classroom Driver&rsquo;s Ed</span><span class="price">$85</span></li>
-                    <li><span class="item">Two-Hour Lesson</span><span class="price">$130</span></li>
-                </ul>
-                <div class="about-actions" aria-label="Booking options">
-                  <a class="red-button" href="/booking">Book Now</a>
-                  <span class="about-subtext">or call</span>
-                  <a class="phone" href="tel:+17072545064"><strong>707-254-5064</strong></a>
-                  <br>
-                  <span class="about-subtext">Not sure yet?</span>
-                  <a class="btn-check-availability" href="/availability">Check Availability</a>
-                  <p class="kicker">Driving lessons can be booked 7 days a week!</p>
+          <div class="about-second-row px-20">
+            <div>
+              <div id="office-hours" class="second-row-item">
+                <div>
+                  <h2 class="h-32-700">Office Hours</h2>
+                  <p class="kicker">We teach 7 days a week!</p>
                 </div>
+                
+                <dl class="hours-list">
+                  <dt>Sunday</dt><dd>Closed</dd>
+                  <dt>Monday</dt><dd>11:00am – 6:00pm</dd>
+                  <dt>Tuesday</dt><dd>11:00am – 6:00pm</dd>
+                  <dt>Wednesday</dt><dd>11:00am – 6:00pm</dd>
+                  <dt>Thursday</dt><dd>11:00am – 6:00pm</dd>
+                  <dt>Friday</dt><dd>11:00am – 6:00pm</dd>
+                  <dt>Saturday</dt><dd>Closed</dd>
+                </dl>
               </div>
-              
+              <div id="programs-and-classes" class="second-row-item">
+                <div>
+                  <h2 class="h-32-700">Programs &amp; Classes</h2>
+                  <p class="kicker">Contact us for our current pricing!</p>
+                </div>
+                <div class="programs-and-classes-content">
+                  <ul class="price-list">
+                      <li><span class="item">Online Driver&rsquo;s Ed</span> at <span class="about-price">$50</span></li>
+                      <li><span class="item">Classroom Driver&rsquo;s Ed</span> at <span class="about-price">$85</span></li>
+                      <li><span class="item">Two-Hour Lesson</span> at <span class="about-price">$130</span></li>
+                  </ul>
+                  <div class="about-actions" aria-label="Booking options">
+                    <div>
+                      <a class="btn-black-24px-700 border-radius-10 px-24 padding-8-20" href="/booking">Book Now</a>
+                      <span class="about-subtext px-16">or call</span>
+                      <a class="about-phone px-24" href="tel:+17072545064">707-254-5064</a>
+                    </div>
+                    <div>
+                      <p class="about-subtext px-16">Not sure yet?</p>
+                      <a class="btn-check-availability px-20 padding-8-20" href="/availability">Check Availability</a>
+                    </div>
+                    <p class="kicker">Driving lessons can be booked 7 days a week!</p>
+                  </div>
+                </div>
+                
+              </div>
             </div>
+
           </div>
         </div>
         
