@@ -302,7 +302,6 @@ aside {
   border-bottom-right-radius: 14px;
   justify-content: center;
   align-items: center;
-  height: fit-content;
 }
 
 .hero-content {
@@ -979,31 +978,31 @@ aside {
 }
 
 .use-our-car-link p {
-  margin: 10px 0;
+  margin: clamp(4.00px, calc(0.50vw + 0.41px), 10px) 0;
 }
 
 .use-our-car-link a {
   display: inline-block;
-  border-radius: 20px;
+  border-radius: clamp(8.00px, calc(1.00vw + 0.82px), 20px);
   height: auto;
   width: auto;
-  padding: 20px;
+  padding: clamp(8.00px, calc(1.00vw + 0.82px), 20px);
   background-color: var(--text-primary);
-  font-size: 38px;
+  font-size: clamp(22.80px, calc(1.80vw + 3.55px), 38px);
   font-weight: 800;
   color: var(--text-secondary);
 }
 
 footer img {
-  margin: 15px 0;
+  margin: clamp(6.00px, calc(0.80vw + -0.37px), 15px) 0;
 }
 
 footer {
-  height: 367.35px;
+  height: clamp(146.94px, calc(19.10vw + 0.65px), 367.35px);
   background-color: var(--accent-primary);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: clamp(4.00px, calc(0.50vw + 0.41px), 10px);
   justify-content: center;
   align-items: center;
 }
@@ -1011,14 +1010,14 @@ footer {
 .footer-links {
   display: inline-flex;
   flex-direction: row;
-  gap: 60px;
+  gap: clamp(24.00px, calc(3.10vw + 0.50px), 60px);
   justify-content: center;
-  margin: 20px 0;
+  margin: clamp(8.00px, calc(1.00vw + 0.82px), 20px) 0;
 }
 
 footer img {
-  height: 40px;
-  margin-bottom: 26px;
+  height: clamp(16.00px, calc(2.10vw + -0.33px), 40px);
+  margin-bottom: clamp(10.40px, calc(1.40vw + -0.91px), 26px);
 }
 
 footer * {
@@ -1026,12 +1025,12 @@ footer * {
 }
 
 footer :last-child {
-  font-size: 12px;
+  font-size: clamp(4.80px, calc(0.60vw + 0.50px), 12px);
 }
 
 .footer-contact {
   display: flex;
-  gap: 20px;
+  gap: clamp(8.00px, calc(1.00vw + 0.82px), 20px);
 }
 
 
