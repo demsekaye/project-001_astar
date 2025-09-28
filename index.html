@@ -227,7 +227,7 @@
 
       <div class="reviews-carousel">
         <button class="reviews-prev">
-          <img src="assets/prev-icon.svg" alt="Previous">
+          <img class="arrow-np" src="assets/prev-icon.svg" alt="Previous">
         </button>
 
         <div class="reviews-slides">
@@ -277,7 +277,7 @@
         </div>
 
         <button class="reviews-next">
-          <img src="assets/next-icon.svg" alt="Next">
+          <img class="arrow-np" src="assets/next-icon.svg" alt="Next">
         </button>
       </div>
     </section>
@@ -285,11 +285,23 @@
 
       
       <!-- GALLERY Section -->
-      <section class="gallery">
-        <h2 class="section-title">
-          Photo <span class="brand">Gallery</span>
-        </h2>
-        <a href="#gallery">View all</a>
+      <section id="gallery" class="flex-column">
+        <div>
+          <h2 class="section-title">
+            Photo <span class="brand">Gallery</span>
+          </h2>
+          <a href="#gallery" class="px-16 style-underline">View all <span class="link-arrow">↗</span></a>
+
+          <div>
+            <button>
+              <img class="arrow-np" src="assets/prev-icon.svg">
+            </button>
+            <button>
+              <img class="arrow-np" src="assets/next-icon.svg">
+            </button>
+          </div>
+        </div>
+
         <div class="gallery-pictures">
           <img class="wide" src="assets/image-1.jpg">
           <img class="narrow" src="assets/image-2.jpg">
@@ -303,16 +315,16 @@
       </section>
 
       <!-- DRIVERS ED Section -->
-      <section class="drivers-ed">
+      <section id="drivers-ed" class="flex-column">
         <h2 class="section-title">
           Driver's Education <span class="brand">Resources</span> 
         </h2>
         <div class="drivers-ed-content">
-          <div class="dmv-resources">
+          <div class="dmv-resources flex-column">
             <a href="#dmv" class="dmv-link">
               <img src="assets/dmv-print.svg">
             </a>
-            <a>www.dmv.ca.gov</a>
+            <a class="primary-fc px-16 style-underline-no-offset">www.dmv.ca.gov</a>
             <div class="handbooks">
               <a>
                 <img src="assets/handbook-1.png">
@@ -330,24 +342,24 @@
                 <img src="assets/handbook-5.png">
               </a>
             </div>
-            <a class="book-apt-btn">
+            <a class="primary-fc px-16 style-underline">
               Book Appointment <span class="link-arrow">↗</span>
             </a>
           </div>
-          <div class="aceable">
-            <div>
+          <div class="aceable flex-column">
+            <div class="flex-column">
               <a>
                 <img src="assets/aceable-logo.svg" class="aceable-logo">
-              <a href="#aceable">www.aceable.com</a>
               </a>
+              <a id="aceable-website" class="style-underline px-16" href="#aceable">www.aceable.com</a>
             </div>
-            <div class="aceable-actions">
+            <div class="aceable-actions px-16">
               <div>
-                <p>California Drivers Ed Online</p>
+                <p class="fw-600">California Drivers Ed Online</p>
                 <a class="aceable-enroll-btn" href="#aceable-enroll-de">Enroll Now</a>
               </div>
               <div>
-                <p>California Traffic School Online</p>
+                <p class="fw-600">California Traffic School Online</p>
                 <a id="traffic-school" class="aceable-enroll-btn" href="#aceable-enroll-ts">Enroll Now</a>
               </div>
             </div>

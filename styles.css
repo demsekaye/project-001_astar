@@ -830,7 +830,7 @@ aside {
 }
 
 
-.reviews-carousel > button > img {
+.arrow-np {
   height: clamp(18.80px, calc(2.40vw + 0.95px), 47px);
 }
 .reviews-carousel > button {
@@ -840,19 +840,31 @@ aside {
 
 /* GALLERY section */
 
-.gallery {
-  background: url('assets/gallery-bg.png') center 100%/cover no-repeat;
+#gallery {
+  background: url('assets/gallery-bg.png') center 65%/cover no-repeat;
+  padding: clamp(20.00px, calc(2.60vw + 0.08px), 50px);
+  padding-top: clamp(12.00px, calc(1.60vw + -0.74px), 30px);
+  gap: clamp(8.00px, calc(1.00vw + 0.82px), 20px);
 }
 
+#gallery > :first-child > :nth-child(3){
+  display: flex;
+  justify-content: space-between;
+}
+
+.style-underline {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 
 .gallery-pictures {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
+  gap: clamp(12.00px, calc(1.60vw + -0.74px), 30px);
 }
 
 .gallery-pictures img {
-  height: 275px;
+  height: clamp(110.00px, calc(14.30vw + 0.45px), 275px);
   object-fit: cover;
   width: 100%;
 }
@@ -867,54 +879,50 @@ aside {
 
 /* DRIVERS-ED Section */
 
-.drivers-ed {
-  display: flex;
-  padding: 0;
-  margin: 30px 0;
-  flex-direction: column;
+#drivers-ed {
+  margin: clamp(16.00px, calc(2.10vw + -0.33px), 40px) 0;
+  gap: clamp(6.00px, calc(0.80vw + -0.37px), 15px);
 }
 
 .drivers-ed-content {
   display: flex;
-  width: 100%;
-  height: 615px;
+  height: clamp(246.00px, calc(32.00vw + 0.62px), 615px);
   flex: 1;
 }
 
 .dmv-resources {
-  display: flex;
-  flex-direction: column;
   flex: 1;
   background-color: var(--accent-tertiary);
-  padding: 30px 20px;
-  gap: 14px;
+  padding: clamp(12.00px, calc(1.60vw + -0.74px), 30px);
+  padding-top: clamp(18.00px, calc(2.30vw + 0.87px), 45px);
+  gap: clamp(5.60px, calc(0.70vw + 0.58px), 14px);
 }
 
 .dmv-link img{
-  width: 268px;
+  width: clamp(107.20px, calc(14.00vw + -0.83px), 268px);
 }
 
 .handbooks {
   display: flex;
   justify-content: space-between;
-  width: 860px;
+  width: clamp(344.00px, calc(44.80vw + -0.16px), 860px);
   margin: auto;
 }
 
 .handbooks > a > img {
-  height: 250px;
-  width: 160px;
+  height: clamp(100.00px, calc(13.00vw + 0.41px), 250px);
+  width: clamp(64.00px, calc(8.30vw + 0.66px), 160px);
   object-fit: cover;
 }
-
-.book-apt-btn {
-  color: var(--accent-primary);
-  font-size: 16px;
+.style-underline-no-offset {
   text-decoration: underline;
-  text-underline-offset: 2px;
 }
 
-.book-apt-btn .link-arrow {
+.primary-fc {
+  color: var(--accent-primary);
+}
+
+.link-arrow {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -922,22 +930,22 @@ aside {
 .aceable {
   flex: 1;
   background-color: var(--accent-primary);
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 60px;
-  padding: 50px;
+  gap: clamp(24.00px, calc(3.10vw + 0.50px), 60px);
+  padding: clamp(20.00px, calc(2.60vw + 0.08px), 50px);
 }
 
-.aceable > :first-child > :last-child {
-  display: block;
+.aceable :first-child {
+  gap: clamp(8.00px, calc(1.00vw + 0.82px), 20px);
+}
+
+#aceable-website {
+  text-underline-offset: 2px;
   color: var(--text-secondary);
-  font-size: 16px;
-  margin: 20px 0;
 }
 
 .aceable-logo {
-  height: 83px;
+  height: clamp(33.20px, calc(4.30vw + 0.45px), 83px);
 }
 
 
@@ -945,27 +953,23 @@ aside {
   background-color: var(--text-secondary);
   width: max-content;
   align-items: center;
-  padding: 5px 120px;
+  padding: clamp(2.00px, calc(0.30vw + -0.78px), 5px) clamp(48.00px, calc(6.20vw + 0.99px), 120px);
 }
 
 .aceable-actions div {
-  margin: 30px 0;
+  margin: clamp(12.00px, calc(1.60vw + -0.74px), 30px) 0;
 }
 
 #traffic-school {
   background-color: #595959;
 }
 
-.aceable-actions p {
-  font-weight: 600;
-}
-
 .aceable-enroll-btn {
-  padding: 10px 140px;
+  padding: clamp(4.00px, calc(0.50vw + 0.41px), 10px) clamp(56.00px, calc(7.30vw + -0.16px), 140px);
   background-color: var(--accent-primary);
   display: inline-block;
   color: var(--text-secondary);
-  margin: 10px 0;
+  margin: clamp(4.00px, calc(0.50vw + 0.41px), 10px) 0;
 }
 
 /* USE-OUR-CAR-LINK Section */
